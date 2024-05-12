@@ -1,7 +1,25 @@
-.detContainer{
+.detContainer {
     display: flex;
     height: 100vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.btn1 {
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.btn1:hover {
+    background-color: #555;
 }

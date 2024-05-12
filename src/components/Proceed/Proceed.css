@@ -1,0 +1,63 @@
+/* ProceedPage.css */
+.procontainer{
+    width: 100vw;
+    height: 100vh;
+}
+.proceed-page-container {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    /* padding: 20px; */
+    text-align: center;
+    height: 100vh;
+    width: 100vw
+}
+
+.proceed-page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh; 
+}
+
+.details-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-btn, .shop-more-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover, .shop-more-btn:hover {
+    background-color: #555;
+}

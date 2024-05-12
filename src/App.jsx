@@ -3,6 +3,8 @@ import './App.css'
 import Card from './components/Card/Card'
 import { Link, useNavigate } from 'react-router-dom'
 import Cart from './components/Cart/Cart'
+import Header from './components/Header/Header'
+import Card1 from './components/Card1/Card1'
 
 function App() {
   const navigate = useNavigate()
@@ -22,18 +24,19 @@ function App() {
     navigate("/cart")
   }
   return (
-    <>
-    <button onClick={handleCart}>Cart</button>
+    <div className='main'>
+      <Header/>
+    <button className="btn"onClick={handleCart}>Cart</button>
     <div className='container'>
     {products.map((product) =>(
     <Link key={product.id} to={`/details?id=${product.id}`}>
-    <Card key={product.id} name={product.title} img={product.image}
-      desc={product.description} price = {product.price} product={product}/>
+    <Card1 key={product.id} name={product.title} img={product.image}
+      desc={product.description} price = {"$ "+product.price} product={product}/>
       </Link>
       ))}
     </div>
-    <Cart/>
-    </>
+    
+    </div>
   )
 }
 
